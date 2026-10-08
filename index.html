@@ -334,37 +334,36 @@
                 Powered by
                 <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
             </p>
+            <script>
+                // Modal Image Gallery
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    document.getElementById("caption").innerHTML = element.alt;
+                }
+
+                // Change navigation style when scrolling
+                window.onscroll = function () {
+                    var navbar = document.getElementById("myNavbar");
+
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        navbar.className = "w3-flex w3-card w3-animate-top w3-white";
+                    } else {
+                        navbar.className = "w3-flex";
+                    }
+                };
+
+                // Toggle navigation on small screens
+                function toggleFunction() {
+                    var x = document.getElementById("navDemo");
+
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
         </footer>
-
-        <script>
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                document.getElementById("caption").innerHTML = element.alt;
-            }
-
-            // Change navigation style when scrolling
-            window.onscroll = function () {
-                var navbar = document.getElementById("myNavbar");
-
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    navbar.className = "w3-flex w3-card w3-animate-top w3-white";
-                } else {
-                    navbar.className = "w3-flex";
-                }
-            };
-
-            // Toggle navigation on small screens
-            function toggleFunction() {
-                var x = document.getElementById("navDemo");
-
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
     </body>
 </html>
