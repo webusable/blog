@@ -115,22 +115,29 @@
                         <i class="fa fa-search"></i>
                     </a>
                 </li>
+                <li>
+                    <button class="w3-button w3-hide-medium w3-hide-large" style="margin-left: auto" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </li>
             </ul>
 
-            <button class="w3-button w3-hide-medium w3-hide-large" style="margin-left: auto" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </button>
-
             <!-- Navigation on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <ul id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="list-style: none">
+                <li>
+                    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+                </li>
 
-                <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-
-                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-
-                <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-            </div>
+                <li>
+                    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+                </li>
+            </ul>
         </nav>
 
         <!-- About -->
