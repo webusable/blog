@@ -1,72 +1,75 @@
 <!doctype html>
 <html lang="es">
-    <title>W3.CSS Parallax Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Blog de tarefas da UF1302 coma parte do curso IFCD0110" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Lato", sans-serif;
-        }
-        body,
-        html {
-            height: 100%;
-            color: #777;
-            line-height: 1.8;
-        }
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Lato", sans-serif;
+            }
+            body,
+            html {
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
 
-        /* Parallax images */
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .bgimg-1 {
-            background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
-            min-height: 100%;
-        }
-
-        .bgimg-2 {
-            background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
-            min-height: 400px;
-        }
-
-        .bgimg-3 {
-            background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
-            min-height: 400px;
-        }
-
-        .w3-wide {
-            letter-spacing: 10px;
-        }
-
-        .w3-hover-opacity {
-            cursor: pointer;
-        }
-
-        /* Turn off parallax scrolling on tablets and phones */
-        @media only screen and (max-device-width: 1600px) {
+            /* Parallax images */
             .bgimg-1,
             .bgimg-2,
             .bgimg-3 {
-                background-attachment: scroll;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .bgimg-1 {
+                background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
+                min-height: 100%;
+            }
+
+            .bgimg-2 {
+                background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
                 min-height: 400px;
             }
-        }
-    </style>
 
+            .bgimg-3 {
+                background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+                min-height: 400px;
+            }
+
+            .w3-wide {
+                letter-spacing: 10px;
+            }
+
+            .w3-hover-opacity {
+                cursor: pointer;
+            }
+
+            /* Turn off parallax scrolling on tablets and phones */
+            @media only screen and (max-device-width: 1600px) {
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: scroll;
+                    min-height: 400px;
+                }
+            }
+        </style>
+        <title>Cuaderno de bitácora | IFCD0110</title>
+    </head>
     <body>
         <!-- First Parallax Image -->
         <header class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -144,7 +147,7 @@
                 <h2 style="display: none">Sobre min e os meus proxectos</h2>
                 <!-- About -->
                 <article class="w3-content w3-container w3-padding-64" id="about" style="background: lime">
-                    <h3 class="w3-center">ABOUT ME</h3>
+                    <h3 class="w3-center" style="text-transform: uppercase">Eu</h3>
 
                     <p class="w3-center">
                         <em>I love photography</em>
@@ -192,6 +195,7 @@
 
                 <!-- Statistics -->
                 <article class="w3-grid w3-center w3-dark-grey w3-padding-16" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))">
+                    <h3 style="display: none">Estadísticas</h3>
                     <div class="w3-section">
                         <span class="w3-xlarge">14+</span><br />
                         Partners
@@ -215,14 +219,14 @@
 
                 <article>
                     <!-- Second Parallax Image -->
-                    <div class="bgimg-2 w3-display-container w3-opacity-min">
+                    <header class="bgimg-2 w3-display-container w3-opacity-min">
                         <div class="w3-display-middle">
-                            <span class="w3-xxlarge w3-text-white w3-wide"> PORTFOLIO </span>
+                            <h3 class="w3-xxlarge w3-text-white w3-wide" style="text-transform: uppercase">Portfolio</h3>
                         </div>
-                    </div>
+                    </header>
 
                     <!-- Portfolio -->
-                    <section class="w3-content w3-container w3-padding-64" id="portfolio" style="background: tomato">
+                    <div class="w3-content w3-container w3-padding-64" id="portfolio" style="background: tomato">
                         <h3 class="w3-center">MY WORK</h3>
 
                         <p class="w3-center">
@@ -253,7 +257,7 @@
                         <p class="w3-center">
                             <button class="w3-button w3-padding-large w3-light-grey">LOAD MORE</button>
                         </p>
-                    </section>
+                    </div>
 
                     <!-- Image Modal -->
                     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
@@ -269,14 +273,14 @@
 
                 <article>
                     <!-- Third Parallax Image -->
-                    <div class="bgimg-3 w3-display-container w3-opacity-min">
+                    <header class="bgimg-3 w3-display-container w3-opacity-min">
                         <div class="w3-display-middle">
-                            <span class="w3-xxlarge w3-text-white w3-wide"> CONTACT </span>
+                            <h3 class="w3-xxlarge w3-text-white w3-wide" style="text-transform: uppercase">Contacto</h3>
                         </div>
-                    </div>
+                    </header>
 
                     <!-- Contact -->
-                    <section class="w3-content w3-container w3-padding-64" id="contact">
+                    <div class="w3-content w3-container w3-padding-64" id="contact">
                         <h3 class="w3-center">WHERE I WORK</h3>
 
                         <p class="w3-center">
@@ -317,7 +321,7 @@
                                 </form>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </article>
             </section>
         </main>
