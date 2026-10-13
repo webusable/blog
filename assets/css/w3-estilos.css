@@ -62,6 +62,11 @@ ul {
     cursor: pointer;
 }
 
+img.avatar {
+    width: 100%;
+    max-width: 500px;
+}
+
 .align-right {
     margin-left: auto;
 }
